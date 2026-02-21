@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+}
+.head{
+    width: 100%;
+    height: 80px;
+    background: #442516;
+    overflow: visible;
+}
+
+.logo{
+    width: 20%;
+    height: 90px;
+    float: left;
+    padding: 3px 0; 
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 3px solid #DEB887;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.menu{
+    width: 60%;
+    height: 90px;
+    float: left;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 31px 0 0 0;
+    text-align: center;
+}
+
+.menu ul li{
+    float: left;
+    margin-left: 77px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #FFF8DC;
+    font-size: 14px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic; /* Курсив */
+    font-weight: 500;
+}
+
+.menu ul li a:hover{
+    color: #FFF8C6;
+}
+
+.cons{
+    width: 20%;
+    height: 80px;
+    float: left;
+    padding-top: 15px;
+    text-align: left;
+}
+.cons_knopka{
+    display: inline-block;
+    cursor: pointer;
+     font-size:14px;
+     text-decoration:none;
+     padding:12px 20px; 
+     color:#5a301d;
+     background:#f8dcb6;
+     border-radius:41px;
+     border:2px solid #DEB887;
+     margin-left: 100px; 
+    }
+.cons_knopka:hover{
+    background:#DEB887;
+    color: #5a301d;
+    border: 2px solid #5a301d;
+    transition: scale(1.02);
+}
+
+.polos {
+    width: 100%;
+    padding: 20px;
+    background: #663722;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    height: 800px;
+    background: #f8e6cc;
+}
+/* .footer {
+    width: 100%;
+    height: 70px;
+    background: #1A237E;
+    color: #FFD700;
+    clear: both;
+    padding: 30px 0 0 30px;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin-left: 20px;
+} */
