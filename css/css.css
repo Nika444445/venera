@@ -87,15 +87,53 @@
 .content {
     width: 100%;
     padding: 20px;
-    height: 800px;
-    background: #f8e6cc;
+    height: 900px;
+    background: #ffdec8;
+
 }
+
+.content_img{
+    width: 100%;
+    height: 900px;
+}
+
+.content_img img{
+    width: 100%;
+    height: 100%;
+
+}
+/* Консультация */ 
+
+.blok_osn {
+    width: 40%;
+    padding: 20px;
+    height: 800px;
+    background: #ffddad;
+    /* margin: 0 auto; */
+    z-index:20;
+    float: left;
+    position: relative;
+    
+
+}
+
+/* Подход */
+
+.content_rasc {
+    width: 70%;
+    padding: 20px;
+    height: 800px;
+    margin-left: auto;
+    background: #fdcb9dc4;
+}
+
+
+
 /* .footer {
     width: 100%;
     height: 70px;
     background: #1A237E;
     color: #FFD700;
-    clear: both;
     padding: 30px 0 0 30px;
 }
 
