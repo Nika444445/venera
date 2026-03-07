@@ -44,7 +44,7 @@
     color: #FFF8DC;
     font-size: 14px;
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-style: italic; /* Курсив */
+    font-style: italic; 
     font-weight: 500;
 }
 
@@ -88,7 +88,7 @@
     width: 100%;
     padding: 20px;
     height: 900px;
-    background: #ffdec8;
+    background: #fcede3;
 
 }
 
@@ -120,7 +120,7 @@
 /* Подход */
 
 .content_rasc {
-    width: 70%;
+    width: 80%;
     padding: 20px;
     height: 800px;
     margin-left: auto;
