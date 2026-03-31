@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(135deg, #2d2d2d, #442516 100%);
+    color: white;
+    padding: 50px 10% 30px;
+    margin-top: 60px;
+ 
+}
+
+.footer_cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* левая колонка */
+.footer_levo {
+    flex: 2;
+}
+/* ссылки */
+.footer_link {
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+
+.footer_link a {
+    color: #f5d5b8;
+    text-decoration: none; /* убрать подчеркивание */
+    font-size: 14px;
+   margin-right: 25px;  /* между словами */
+    margin-bottom: 10px;  /* между строками ссылок */
+    font-family: 'Arial', sans-serif;
+}
+
+.footer_link a:hover {
+    color: #DEB887;
+    text-decoration: underline;/*  подчеркивание при наведении */
+}
+
+/* копирайт */
+.footer_copit {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;/* межстрочный интервал */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);/* верхняя полоска */
+    padding-top: 20px;
+}
+
+/* правая колонка */
+.footer_info {
+     margin-left: 10px; 
+    flex: 1;
+     
+}
+
+/* адрес */
+.footer_navig {
+    margin-bottom: 30px;
+}
+
+.footer_navig a {
+    color: #DEB887;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer_navig a:hover {
+    color: #f5d5b8;
+}
+
+.footer_navig p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 12px 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
