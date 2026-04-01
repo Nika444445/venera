@@ -5,7 +5,7 @@
     padding: 40px;
     background-color: #fdcb9dc4;  
 }
-
+/* заголовок */
 .content_mesto h1 {
     text-align: center;
     font-size: 44px;
@@ -14,6 +14,7 @@
     margin: 0 auto 50px;
     padding-bottom: 20px;
     border-bottom: 2px solid #6e522d;
+    width: 600px; /* ширина линии */
 }
 
 .mesto_container {
@@ -38,7 +39,7 @@
 .contact,
 .pab,
 .dobr,
- .cots {
+.cots {
     background: white;
     border-radius: 20px;
     padding: 25px;

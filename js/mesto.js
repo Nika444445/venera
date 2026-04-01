@@ -40,6 +40,6 @@
 document.getElementById('mapCont').innerHTML = `
     <a href="https://yandex.ru/maps/?text=Москва, Большая садовая, 15" target="_blank" class="map_link">
         <img src="https://static-maps.yandex.ru/1.x/?ll=37.592,55.765&z=16&size=600,450&l=map&pt=37.592,55.765,pm2rdm" 
-             alt="Карта проезда" class="map_image">
+             alt="Карта" class="map_image">
     </a>
 `;
