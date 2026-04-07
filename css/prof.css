@@ -1,0 +1,199 @@
+
+.content_prof {
+    width: 100%;
+    padding: 150px 10% 60px;
+    background: linear-gradient(rgba(252, 237, 227, 0.5), rgba(252, 237, 227, 0.5)),url("../img/cras.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+/* главный заголовок */
+.prof-title {
+    text-align: center;
+    font-size: 48px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    margin: 0 auto 80px;
+    max-width: 1200px;
+    padding: 15px 40px;
+    background: rgba(90, 62, 43, 0.25);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+/* заголовок раздела */
+.prof_titl {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    margin: 50px 0 25px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+}
+
+
+.prof-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 60px auto 0;
+    padding: 0 20px 60px;
+}
+
+/* карточка профессионала */
+.prof-card {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.prof-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* фото */
+.prof-photo {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: #f0e2d0;
+}
+
+.prof-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* инф */
+.prof-info {
+    padding: 25px;
+    color: #fff;
+}
+
+.prof-info h3 {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    margin-bottom: 5px;
+}
+
+.prof-specialization {
+    font-size: 16px;
+    color: #f8dcb6;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.prof-experience {
+    font-size: 14px;
+    color: #e0c8b0;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.prof-details {
+    margin-bottom: 15px;
+}
+
+.prof-details p {
+    font-size: 14px;
+    color: #e0c8b0;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5px;
+}
+
+.prof-details b {
+    color: #442516;
+}
+
+.procedures,
+.certificates {
+    margin-top: 15px;
+}
+
+.procedures b,
+.certificates b {
+    font-size: 15px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.procedures ul,
+.certificates ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.procedures li,
+.certificates li {
+    font-size: 13px;
+    color: #e0c8b0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+
+@media (max-width: 1000px) {
+    .content_prof {
+        padding: 140px 15px 40px;
+    }
+
+    .prof-title {
+        font-size: 36px;
+        padding: 15px 20px;
+        margin-bottom: 50px;
+    }
+
+    .prof_titl {
+        font-size: 22px;
+        margin: 30px 0 15px;
+        padding: 10px 15px;
+    }
+
+    .prof-container {
+        gap: 25px;
+        padding: 0 10px 40px;
+    }
+
+    .prof-card {
+        width: 100%;
+    }
+
+    .prof-photo {
+        height: auto;
+        background: transparent; /* делает фон фото прозрачным для красоты */
+    }
+
+    .prof-photo img {
+        object-fit: contain; /*картинка целиком */
+        height: auto;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .prof-info {
+        padding: 20px;
+    }
+
+    .prof-info h3 {
+        font-size: 20px;
+    }
+}
+

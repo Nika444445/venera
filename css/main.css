@@ -1,135 +1,136 @@
-*{
+* {
     margin: 0;
-     box-sizing: border-box; /*выравнивание*/
-}
-.head{
-    width: 100%;
-    height: 90px;
-    background: #3a2a1e;;
-    overflow: visible;
+    box-sizing: border-box; /* чтобы элементы не вылазили за границы */
 }
 
-.logo{
+.head {
+    width: 100%;
+    height: 90px;
+    background: #3a2a1e;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* логотип */
+.logo {
     width: 20%;
     height: 90px;
     float: left;
-    padding: 3px 0; 
-    
-
+    padding: 3px 0;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 3px solid #d4b28c;;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+     border: 3px solid #d4b28c; /*рамка */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*тень */
 }
-.menu{
+/* контенер меню ссылки */
+.menu {
     width: 60%;
     height: 90px;
     float: left;
 }
 
-.menu ul{
-    list-style-type: none;
+.menu ul {
+    list-style-type: none; /* убирает точки */
     margin: 38px 0 0 0;
     text-align: center;
 }
 
-.menu ul li{
+.menu ul li {
     float: left;
     margin-left: 77px;
 }
 
-.menu ul li a{
-    text-decoration: none;
+.menu ul li a {
+    text-decoration: none; /* убирает подчеркивание у ссылок */
     color: #FFF8DC;
     font-size: 14px;
     font-family: 'Georgia', serif;
-    font-style: italic; 
+    font-style: italic;
     font-weight: 500;
-    letter-spacing: 0.5px; /*интервал между буквами*/
+    letter-spacing: 0.5px; /*увелич. расстояние между буквами */
 }
 
-.menu ul li a:hover{
-    border-bottom: 1px solid #d4b28c; /* подчеркивание текста при наведении */
+.menu ul li a:hover {
+    border-bottom: 1px solid #d4b28c; /*линия */
     padding-bottom: 5px;
 }
 
 
-/* Кнопка консультации */
-.cons{
+/* кнопка запись на регистрацию */
+.cons {
     width: 20%;
     height: 80px;
     float: left;
     padding-top: 30px;
-    
 }
-.cons_knopka{
-    display: inline-block;
-    cursor: pointer;
-     font-size:14px;
-     text-decoration:none;
-     padding:12px 20px; 
-     color:#3a2a1e;
-     background:#f8dcb6;
-     border-radius:30px;
-     border:2px solid #b98f6b;
-     margin-left: 100px; 
-     font-weight: bold;
-    letter-spacing: 0.5px;
-    }
 
-.cons_knopka:hover{
-    background:#b98f6b;
+.cons_knopka {
+    display: inline-block;
+    cursor: pointer; 
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #3a2a1e;
+    background: #f8dcb6;
+    border-radius: 30px; /*скругляет */
+    border: 2px solid #b98f6b;
+    margin-left: 100px;
+    font-weight: 600;
+    letter-spacing: 0.5px; /*расстояние между буквами */
+}
+
+.cons_knopka:hover {
+    background: #b98f6b;
     color: #fff8e7;
     border: 2px solid #5a301d;
     transform: scale(1.03);
 }
+
+
 .polos {
     width: 100%;
     padding: 15px 0;
-    background:  #69482e;;
+    background: rgba(105, 72, 46, 0.6);
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Основной */
+/* главный блок после картинки */
 .content {
     width: 100%;
-    height: 2300px;
+    min-height: 800px;
     background: #fcede3;
-
+    padding-bottom: 60px;
 }
 
-.content_img{
+/* главный блок с картинкой */
+.content_bg {
     width: 100%;
-    height: 900px;
+    min-height: 800px;
+    padding: 120px 0 60px;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                url("../img/Fon_m.PNG") ;
+    background-position: center;            
+    background-size: cover;/*картинка растягивается */
 }
 
-.content_img img{
-    width: 100%;
-    height: 100%;
-
+/*  чтобы было видно картинку */
+.content_bg .content {
+    background: transparent; /* прозрачный */
+    min-height: auto;
 }
-/* Консультация */ 
-
-.blok_osn {
-    width: 40%;
-    padding: 20px;
-    height: 800px;
-    background: #ffddad;
-    /* margin: 0 auto; */
-    z-index:20;
-    float: left;
-    position: relative;
-    
-
-}
-
-
-/* Главная текст*/
+/* блок о клиннике */
 .content_rasc2 {
-    text-align: center; 
-    padding: 60px 0 40px 0;    
+    text-align: center;
+    padding: 60px 0 10px 0;
 }
 
 .content_rasc2 h2 {
@@ -137,9 +138,10 @@
     font-size: 60px;
     color: #5a3e2b;
     display: inline-block;
-    border-bottom: 2px solid #b98f6b;
-    letter-spacing: 1px;
+    border-bottom: 2px solid #b98f6b; /* линия */
+    letter-spacing: 1px;/*расстояние между буквами */
 }
+
 .content_rasc2 p {
     margin-top: 50px;
     font-size: 27px;
@@ -159,11 +161,12 @@
     color: #442516;
     font-family: 'Georgia', serif;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.6; /* межстрочный */
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
 }
+
 .content_rasc2 p2 {
     display: block;
     margin-top: 5px;
@@ -176,6 +179,7 @@
     margin-right: auto;
     padding: 20px 30px;
 }
+
 .content_rasc2 p3 {
     display: block;
     margin-top: 15px;
@@ -188,55 +192,216 @@
     margin-right: auto;
     padding: 15px 25px;
 }
-.content_rasc2 b {
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #442516;
-    font-family: 'Georgia',serif;
-    border-bottom: 2px solid #DEB887;
-    max-width: 600px;
-    margin-left: auto;     
-    margin-right: auto;
-    
+
+/* слайдер */
+
+.carousel {
+    max-width: 1150px;
+    margin: 50px auto;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
-.content_rasc2 ul {
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+}
+
+
+/* блок почему выбирают нас */
+.why {
+    background: rgba(90, 62, 43, 0.08);
+    padding: 30px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why b {
+    display: block;
+    margin: 40px auto 20px;
+    font-size: 28px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #DEB887;
+    max-width: 600px;
+    text-align: center;
+}
+
+.why ul {
     margin: 30px auto;
     padding: 0 30px;
     text-align: left;
-    max-width: 1200px;  
+    max-width: 1200px;
 }
 
-.content_rasc2 li {
+.why li {
     margin-bottom: 25px;
     font-size: 17px;
     color: #4a3a2a;
     font-family: 'Georgia', serif;
-    line-height: 1.7;
+    line-height: 1.7;/* межстрочный */
     padding-left: 50px;
 }
 
-.content_rasc2 li b {
-    display: inline; 
+.why li b {
+    display: inline; /* в одной строчке стоит с текстом остальным */
     font-size: 18px;
     color: #442516;
-     border: none;
+    border: none;/* подчеркивания убирает */
 }
 
 
 
-.carousel {
-max-width: 1150px;
-margin: 50px auto;
-border-radius: 25px;
-overflow: hidden; /*скругляем*/
+/* блок как попасть на прием */
+.priem {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 45px 50px;
+    background: #fff8f0;
+    border-radius: 35px; /* скругляет */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
-        
-.carousel-item img {
-width: 100%;
-height: 550px;
 
- } 
+.priem h3 {
+    width: 100%;
+    font-size: 32px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #DEB887;/* линия */
+    text-align: center;
+    
+}
 
+.priem p {
+    font-size: 16px;
+    color: #4a3a2a;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+/* блок что вас ждет на консультации */
+.info_cons {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 45px 50px;
+    background: #fff8f0;
+    border-radius: 35px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.info_cons h3 {
+    width: 100%;
+    font-size: 32px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #DEB887;
+    text-align: center;
+}
+
+.info_cons p {
+    font-size: 16px;
+    color: #4a3a2a;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* блок почему стоит прийти именно к нам */
+.why_us {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 45px 50px;
+    background: #fff8f0;
+    border-radius: 35px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.why_us h3 {
+    width: 100%;
+    font-size: 32px;
+    color: #442516;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #DEB887;
+    text-align: center;
+}
+
+.why_us p {
+    font-size: 16px;
+    color: #4a3a2a;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    text-align: center;
+}
+/* ссылка на галерею */
+.why_us a {
+    color: #c17b55;
+}
+
+.why_us a:hover {
+    color: #925033;
+}
+
+/* адаптация */
+@media (max-width: 900px) {
+    .head {
+        height: auto;
+        padding: 15px 10px;
+    }
+    .logo {
+        margin-bottom: 10px; }
+    .logo img {
+         width: 100px; height: 100px; }
+    
+    .logo, 
+    .menu, 
+    .cons {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+    .menu ul li {
+        float: none;
+        display: inline-block;
+        margin: 5px 8px; 
+    }
+    .cons {
+        padding-top: 10px;
+    }
+    .cons_knopka {
+        margin-left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .content_rasc2 h2 {
+         font-size: 36px; }
+         
+    .content_rasc2 p {
+         font-size: 20px; }
+
+    .why, 
+    .priem, 
+    .info_cons, 
+    .why_us {
+        padding: 25px;
+        margin: 30px auto;
+        width: 95%;
+    }
+
+    .why li {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+}
