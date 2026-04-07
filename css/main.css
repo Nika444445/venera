@@ -13,6 +13,7 @@
     left: 0;
     z-index: 1000;
 }
+
 /* логотип */
 .logo {
     width: 20%;
@@ -25,9 +26,10 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-     border: 3px solid #d4b28c; /*рамка */
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*тень */
+    border: 3px solid #d4b28c; /* рамка */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* тень */
 }
+
 /* контенер меню ссылки */
 .menu {
     width: 60%;
@@ -53,16 +55,15 @@
     font-family: 'Georgia', serif;
     font-style: italic;
     font-weight: 500;
-    letter-spacing: 0.5px; /*увелич. расстояние между буквами */
+    letter-spacing: 0.5px; /* увелич. расстояние между буквами */
 }
 
 .menu ul li a:hover {
-    border-bottom: 1px solid #d4b28c; /*линия */
+    border-bottom: 1px solid #d4b28c; /* линия */
     padding-bottom: 5px;
 }
 
-
-/* кнопка запись на регистрацию */
+/* кнопка запись на консультацию */
 .cons {
     width: 20%;
     height: 80px;
@@ -72,17 +73,17 @@
 
 .cons_knopka {
     display: inline-block;
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 14px;
     text-decoration: none;
     padding: 12px 20px;
     color: #3a2a1e;
     background: #f8dcb6;
-    border-radius: 30px; /*скругляет */
+    border-radius: 30px; /* скругляет */
     border: 2px solid #b98f6b;
     margin-left: 100px;
     font-weight: 600;
-    letter-spacing: 0.5px; /*расстояние между буквами */
+    letter-spacing: 0.5px; /* расстояние между буквами */
 }
 
 .cons_knopka:hover {
@@ -92,7 +93,7 @@
     transform: scale(1.03);
 }
 
-
+/* полоска под шапкой */
 .polos {
     width: 100%;
     padding: 15px 0;
@@ -100,7 +101,7 @@
     position: fixed;
     top: 90px;
     left: 0;
-    z-index: 1000;
+    z-index: 999;
 }
 
 /* главный блок после картинки */
@@ -116,18 +117,19 @@
     width: 100%;
     min-height: 800px;
     padding: 120px 0 60px;
-    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
-                url("../img/Fon_m.PNG") ;
-    background-position: center;            
-    background-size: cover;/*картинка растягивается */
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+                url("../img/Fon_m.PNG");
+    background-position: center;
+    background-size: cover; /* картинка растягивается */
 }
 
-/*  чтобы было видно картинку */
+/* чтобы было видно картинку */
 .content_bg .content {
     background: transparent; /* прозрачный */
     min-height: auto;
 }
-/* блок о клиннике */
+
+/* блок о клинике */
 .content_rasc2 {
     text-align: center;
     padding: 60px 0 10px 0;
@@ -139,7 +141,7 @@
     color: #5a3e2b;
     display: inline-block;
     border-bottom: 2px solid #b98f6b; /* линия */
-    letter-spacing: 1px;/*расстояние между буквами */
+    letter-spacing: 1px; /* расстояние между буквами */
 }
 
 .content_rasc2 p {
@@ -194,7 +196,6 @@
 }
 
 /* слайдер */
-
 .carousel {
     max-width: 1150px;
     margin: 50px auto;
@@ -206,7 +207,6 @@
     width: 100%;
     height: 550px;
 }
-
 
 /* блок почему выбирают нас */
 .why {
@@ -239,18 +239,16 @@
     font-size: 17px;
     color: #4a3a2a;
     font-family: 'Georgia', serif;
-    line-height: 1.7;/* межстрочный */
+    line-height: 1.7;
     padding-left: 50px;
 }
 
 .why li b {
-    display: inline; /* в одной строчке стоит с текстом остальным */
+    display: inline; /* в одной строчке с остальным текстом */
     font-size: 18px;
     color: #442516;
-    border: none;/* подчеркивания убирает */
+    border: none; /* убирает подчеркивания */
 }
-
-
 
 /* блок как попасть на прием */
 .priem {
@@ -269,9 +267,8 @@
     font-family: 'Georgia', serif;
     margin-bottom: 25px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #DEB887;/* линия */
+    border-bottom: 2px solid #DEB887; /* линия */
     text-align: center;
-    
 }
 
 .priem p {
@@ -281,6 +278,7 @@
     line-height: 1.8;
     margin-bottom: 12px;
 }
+
 /* блок что вас ждет на консультации */
 .info_cons {
     max-width: 1200px;
@@ -339,6 +337,7 @@
     line-height: 1.8;
     text-align: center;
 }
+
 /* ссылка на галерею */
 .why_us a {
     color: #c17b55;
@@ -348,25 +347,26 @@
     color: #925033;
 }
 
-/* адаптация */
+/* ============================================
+   АДАПТАЦИЯ (Планшеты и Телефоны)
+   ============================================ */
 @media (max-width: 900px) {
+    /* Шапка */
     .head {
         height: auto;
         padding: 15px 10px;
     }
-    .logo {
-        margin-bottom: 10px; }
-    .logo img {
-         width: 100px; height: 100px; }
-    
-    .logo, 
-    .menu, 
-    .cons {
+
+    .logo, .menu, .cons {
         width: 100%;
         float: none;
         text-align: center;
     }
 
+    .logo { margin-bottom: 10px; }
+    .logo img { width: 100px; height: 100px; }
+
+    /* Меню */
     .menu ul {
         margin: 0;
         padding: 0;
@@ -374,27 +374,23 @@
     .menu ul li {
         float: none;
         display: inline-block;
-        margin: 5px 8px; 
+        margin: 5px 8px;
     }
-    .cons {
-        padding-top: 10px;
-    }
+
+    /* Кнопка */
+    .cons { padding-top: 10px; }
     .cons_knopka {
         margin-left: 0;
         display: inline-block;
         padding: 10px 20px;
         font-size: 13px;
     }
-    .content_rasc2 h2 {
-         font-size: 36px; }
-         
-    .content_rasc2 p {
-         font-size: 20px; }
 
-    .why, 
-    .priem, 
-    .info_cons, 
-    .why_us {
+    /* Тексты и блоки */
+    .content_rasc2 h2 { font-size: 36px; }
+    .content_rasc2 p { font-size: 20px; }
+
+    .why, .priem, .info_cons, .why_us {
         padding: 25px;
         margin: 30px auto;
         width: 95%;
